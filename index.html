@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio SAR</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Inter:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="img/logoPrincipal.png">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/logoPrincipal.png" alt="" class="logoPrincipal"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="jumbotron-custom text-center">
+    <div class="container">
+      <h1 class="display-4">Santino Rodolfo Alico</h1>
+      <p class="lead">Portfolio profesional · Desarrollo Web</p>
+    </div>
+  </section>
+  <section class="container my-5">
+    <div class="row g-4">
+      <div class="col-md-4 project-card-wrapper">
+        <div class="card h-100 text-center p-3">
+          <a href="https://www.santafemotores.com/"><img src="img/imgSF.jpg" class="card-img-top" alt="SF Motores"></a>
+          <div class="card-body">
+            <h5 class="card-title">Página Web real</h5>
+            <p class="project-extra">
+              Proyecto web real desarrollado para una empresa con iteligencia artificial.
+              Incluye diseño, accesibilidad y estructura adecuada.
+            </p>
+            <button class="btn btn-sar btn-expand">+</button>
+            <button class="btn btn-secondary btn-close-expand mt-2">X</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 project-card-wrapper">
+      <div class="card h-100 text-center p-3">
+        <a href="https://gitec.es/"><img src="img/LogoLevanteGaming.png" alt="" class="card-img-top"></a>
+        <h5>Levante Gaming</h5>
+         <p class="project-extra">
+          Trabajo en una empresa real, la cual se dedica a la venta del comercio al por mayor de equipos para tecnologías de la información y
+           comunicaciones, actuando también como sociedad intermediaria en actividades profesionales relacionadas con la fabricación y
+           desarrollo de productos, aunque su enfoque principal es la distribución mayorista de hardware y componentes tecnológicos.
+          </p>
+        <button class="btn btn-sar btn-expand">+</button>
+        <button class="btn btn-secondary btn-close-expand mt-2">X</button>
+      </div>
+    </div>
+
+    <div class="col-md-4 project-card-wrapper">
+      <div class="card h-100 text-center p-3">
+        <a href="https://www.vaprel.es/"><img src="img/vaprelLogo.png" alt="" class="card-img-top"></a>
+        <h5>Vaprel</h5>
+        <p class="project-extra">
+          VAPREL es un proyecto web en el que participé como programador, cuyo objetivo es ofrecer una plataforma sencilla y funcional para 
+          la gestión y visualización de información relacionada con el proyecto. Me encargué del desarrollo de la estructura de la web, utilizando HTML, CSS y JavaScript.
+          </p>
+        <button class="btn btn-sar btn-expand">+</button>
+        <button class="btn btn-secondary btn-close-expand mt-2">X</button>
+      </div>
+    </div>
+
+    </div>
+    </div>
+  </section>
+  <footer class="pt-4">
+    <div class="container">
+      <div class="row text-center text-md-start">
+
+        <div class="col-md-3 mb-3">
+          <a href="https://www.instagram.com/santialico/"><img src="img/instaBuenFondo.png" alt="" class="Logos"></a>
+          <a
+            href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSBmXDVLbVbHxFXhTlrKgKBppQlLhWmdPJSTVhXPvHGxZQVNMzGHknZQJMLvmqdLSwVnLbbV"><img
+              src="img/imgCorreo.png" alt="" class="Logos"></a>
+          <a href="tel:+34622718731"><img src="img/imgTelefono.png" alt="" class="Logos"></a>
+          <a href="https://www.linkedin.com/in/santino-alico-174660329/"><img src="img/imgLINKEDING.png" alt=""
+              class="Logos"></a>
+        </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps?q=Florida%20Universit%C3%A0ria,%20Carrer%20del%20Rei%20En%20Jaume%20I,%202,%2046470%20Catarroja,%20Valencia&output=embed"
+            width="100%" height="120" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<script>
+  document.querySelectorAll('.btn-expand').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const currentCard = btn.closest('.project-card-wrapper');
+      const allCards = document.querySelectorAll('.project-card-wrapper');
+
+      allCards.forEach(card => {
+        if (card === currentCard) {
+          card.classList.add('expanded');
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+
+  document.querySelectorAll('.btn-close-expand').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.project-card-wrapper').forEach(card => {
+        card.classList.remove('expanded');
+        card.classList.remove('hidden');
+      });
+    });
+  });
+</script>
+
+</html>

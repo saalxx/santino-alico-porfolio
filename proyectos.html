@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos · SAR</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Inter:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/png" href="img/logoPrincipal.png">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="img/logoPrincipal.png" alt="" class="logoPrincipal"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="proyectos.html">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselProjects" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/ImgTorna.png" class="d-block w-100" alt="Proyecto destacado 1">
+      </div>
+      <div class="carousel-item">
+        <img src="img/ImgLevanteGaming.png" class="d-block w-100" alt="Proyecto destacado 2">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjects" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselProjects" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+
+  <section class="container my-5">
+    <h2 class="text-center mb-5">Mis Proyectos</h2>
+
+    <div class="row g-4">
+      <div class="col-md-5 offset-md-1">
+        <div class="project-card">
+          <h3>Levante Gaming</h3>
+          <p>Desarrollo del sistema de búsqueda dentro de la página WEB interna.</p>
+          <ul>
+            <li>HTML5 y CSS</li>
+            <li>Angular</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+          </ul>
+          <button class="btn btn-sar" data-bs-toggle="modal" data-bs-target="#modalLevanteGaming">
+            Ver más
+          </button>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div class="project-card">
+          <h3>Torna Jom</h3>
+          <p>Aplicación web centrada en la reconstrucción tras la dana.</p>
+          <ul>
+            <li>PHP</li>
+            <li>HTML5 y CSS</li>
+            <li>Trabajo en equipo</li>
+          </ul>
+          <button class="btn btn-sar" data-bs-toggle="modal" data-bs-target="#modalTornJom">
+            Ver más
+          </button>
+
+        </div>
+      </div>
+
+      <div class="col-md-5 offset-md-1">
+        <div class="project-card">
+          <h3>Vaprel</h3>
+          <p>Desarrollo de sitio web informativo.</p>
+          <ul>
+            <li>JAVA</li>
+            <li>HTML y CSS</li>
+            <li>JAVASCRIPT</li>
+          </ul>
+          <button class="btn btn-sar" data-bs-toggle="modal" data-bs-target="#modalVaprel">
+            Ver más
+          </button>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div class="project-card">
+          <h3>Trabajos destacados</h3>
+          <p>Resumen de trabajos destacados.</p>
+          <ul>
+            <li>HTML y CSS</li>
+            <li>SYMFONY</li>
+            <li>BOOTSTRAP</li>
+            <li>JAVASCRIPT</li>
+            <li>ANGULAR</li>
+          </ul>
+          <button class="btn btn-sar" data-bs-toggle="modal" data-bs-target="#modalTrabajosDestacados">
+            Ver más
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="pt-4">
+    <div class="container">
+      <div class="row text-center text-md-start">
+
+        <div class="col-md-3 mb-3">
+          <a href="https://www.instagram.com/santialico/"><img src="img/instaBuenFondo.png" alt="" class="Logos"></a>
+          <a
+            href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSBmXDVLbVbHxFXhTlrKgKBppQlLhWmdPJSTVhXPvHGxZQVNMzGHknZQJMLvmqdLSwVnLbbV"><img
+              src="img/imgCorreo.png" alt="" class="Logos"></a>
+          <a href="tel:+34622718731"><img src="img/imgTelefono.png" alt="" class="Logos"></a>
+          <a href="https://www.linkedin.com/in/santino-alico-174660329/"><img src="img/imgLINKEDING.png" alt="" class="Logos"></a>
+        </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps?q=Florida%20Universit%C3%A0ria,%20Carrer%20del%20Rei%20En%20Jaume%20I,%202,%2046470%20Catarroja,%20Valencia&output=embed"
+            width="100%" height="120" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="modalTornJom" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h2 class="modal-title">Torn Jom</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <h3>Porque fue creada</h3>
+          <p>
+            Aplicación web centrada en la reconstrucción tras la dana,
+            desarrollada como proyecto colaborativo. Fue creada para ayudar a
+            las personas afectadas por desastres que provoco la dana.
+          </p>
+          <h3>Lenguajes utilizados</h3>
+          <ul>
+            <li>Backend en PHP</li>
+            <li>HTML5 y CSS3</li>
+            <li>Trabajo en equipo</li>
+            <li>Diseño responsive</li>
+          </ul>
+          <a href="https://github.com/LautaroLambrecht/TornaJom"><img src="img/github.png" alt="" class="imgGithub"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalLevanteGaming" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Levante Gaming </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <h3>Desarrollo y implementación en la página Web</h3>
+          <p>
+            En prácticas profesionales gestioné el desarrollo del sistema de búsqueda dentro de la página WEB interna de
+            la empresa para obtener
+            la información de las máquinas de los usuarios asignados. Con el objetivo de mejorar la perforace de la gestión.
+            El trabajo se desarrolló en base a mis sugerencias y fue realzado con las siguientes herramientas:
+          </p>
+
+          <ul>
+            <li>Angular </li>
+            <li>PHP </li>
+            <li>HTML </li>
+            <li>MySQL</li>
+          </ul>
+          <p>El trabajo fue desarrollado en las dos semanas de duración de la pasantía.</p>
+          <a href="https://gitec.es/"><img src="img/ImgLevanteGamingMini.png" alt="" class="logoLevanteGaming"></a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalTrabajosDestacados" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Trabajos destacados</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <h3>Experiencia</h3>
+          <p>
+            Resumen de trabajos destacados realizados durante mi formación académica. Desde el backend hasta el
+            frontend,
+            abarcando diversas tecnologías y metodologías de desarrollo web.
+          </p>
+          <h3>Las habilidades adquiridas incluyen:</h3>
+          <ul>
+            <li>Backend en PHP y Symfony</li>
+            <li>HTML y CSS</li>
+            <li>Trabajo en equipo</li>
+            <li>Diseño responsive junto a bootstrap</li>
+            <li>JavaScript y Angular</li>
+
+          </ul>
+          <a href="https://github.com/saalxx/ResumenTrabajos"><img src="img/github.png" alt="" class="imgGithub"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalVaprel" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Vaprel</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <p>
+            VAPREL es un proyecto en el que tuve la oportunidad de participar durante mis prácticas como alumno de TSMR. Aunque mi rol principal no era 
+            el de programador, por interés personal en el desarrollo web me permitieron ver y comprender parte del código del proyecto, además de explicarme 
+            cómo estaba estructurado. Gracias a ello aprendí conceptos básicos de HTML, CSS , JavaScript y PHP, 
+            entendí cómo se organiza una aplicación web real y cómo se trabaja en un entorno profesional, lo que despertó aún más mi interés por la programación.
+          </p>
+
+          <ul>
+            <li>Backend en PHP</li>
+            <li>HTML y CSS</li>
+            <li>Trabajo en equipo</li>
+            
+          </ul>
+          <a href="https://www.vaprel.es/"><img src="img/vaprelLogo.png" alt="" class="logoLevanteGaming"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
