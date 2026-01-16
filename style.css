@@ -293,7 +293,7 @@ section.container {
     height: 220px;
   }
 
-  /* Envelope & Letter */
+ 
   .envelope {
     height: 280px;
   }
@@ -310,7 +310,7 @@ section.container {
     font-size: 0.7rem;
   }
 
-  /* Logos */
+  
   .imgGithub {
     width: 32px;
     height: 32px;
@@ -329,7 +329,7 @@ section.container {
     margin-right: 12px;
   }
 
-  /* Project cards */
+  
   .project-card-wrapper {
     flex: 0 0 100%;
     max-width: 100%;
@@ -404,6 +404,14 @@ section.container {
   display: flex;
   justify-content: center; 
   text-align: center;      
+}
+.project-card-wrapper.hidden {
+  display: none !important;
+}
+
+.project-card-wrapper.expanded {
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
 }
 
 
