@@ -260,6 +260,153 @@ section.container {
   width: 120%;
 }
 
+@media (max-width: 576px) {
+
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.3rem; }
+  h3 { font-size: 1.1rem; }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .jumbotron-custom {
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+
+  section.container {
+    padding: 1rem;
+  }
+
+  .card,
+  .project-card {
+    padding: 1rem;
+  }
+
+  .carousel-item img {
+    height: 220px;
+  }
+
+  /* Envelope & Letter */
+  .envelope {
+    height: 280px;
+  }
+
+  .letter {
+    width: 85%;
+    top: 8%;
+    padding: 0.9rem;
+  }
+
+  .letter .form-label,
+  .letter .form-control,
+  .letter .btn {
+    font-size: 0.7rem;
+  }
+
+  /* Logos */
+  .imgGithub {
+    width: 32px;
+    height: 32px;
+  }
+
+  .logoLevanteGaming {
+    width: 150px;
+  }
+
+  .logoPrincipal {
+    width: 80px;
+  }
+
+  .Logos {
+    width: 26px;
+    margin-right: 12px;
+  }
+
+  /* Project cards */
+  .project-card-wrapper {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .project-card-wrapper.expanded img {
+    max-width: 160px;
+  }
+
+  .container.my-5 {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}
+@media (min-width: 577px) and (max-width: 991px) {
+
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.6rem; }
+
+  .jumbotron-custom {
+    padding: 4rem 2rem;
+  }
+
+  .carousel-item img {
+    height: 300px;
+  }
+
+  .envelope {
+    height: 320px;
+  }
+
+  .letter {
+    width: 78%;
+  }
+
+  .logoLevanteGaming {
+    width: 180px;
+  }
+
+  .project-card-wrapper {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .project-card-wrapper.expanded {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .container.my-5 {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+
+  h1 { font-size: 2.6rem; }
+  h2 { font-size: 2rem; }
+
+  .carousel-item img {
+    height: 420px;
+  }
+
+  .letter {
+    width: 70%;
+  }
+
+  .project-card-wrapper.expanded img {
+    max-width: 260px;
+  }
+}
+.col-md-4.project-card-wrapper {
+  display: flex;
+  justify-content: center; 
+  text-align: center;      
+}
+
+
 
 
 
